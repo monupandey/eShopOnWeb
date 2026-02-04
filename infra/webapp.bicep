@@ -2,7 +2,7 @@ param webAppName string // = uniqueString(resourceGroup().id) // unique String g
 param sku string = 'S1' // The SKU of App Service Plan
 param location string = resourceGroup().location
 
-var appServicePlanName = toLower('AppServicePlan-${webAppName}')
+var appServicePlanName = toLower('az400m03l08-sp1')
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
   name: appServicePlanName
